@@ -1,0 +1,5 @@
+name = Spider
+description = Like spider, move on internet and catch content.
+files[] = spider.class.inc
+core = 7.x
+version 7.x.0.0.1

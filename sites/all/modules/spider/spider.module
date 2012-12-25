@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * @file
+ * Spider the page content. 
+ */
+
+/**
+ * Implements hook_menu(). 
+ */
+function spider_menu() {
+  return array(
+    'content-qq' => array(
+        'title' => 'QQ',
+        'page callback' => 'spider_qq_content',
+        'access arguments' => array('access content'),
+    ),
+  );
+}
+
+/**
+ *Page callback. 
+ */
+function spider_qq_content() {
+  $qq = new Spider();
+  $qq->setURL('http://www.qq.com/');
+  //$qq->addNonFollowMatch('/.(jpg|gif|png)$/ig');
+  $qq->go();
+  return '';
+}

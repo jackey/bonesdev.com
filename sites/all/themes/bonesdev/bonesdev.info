@@ -1,0 +1,24 @@
+core = 7.x
+description = Bonesdev default theme.
+engine = phptemplate
+name = Bones Dev
+base theme = "tao"
+
+; Regions =====================================================================
+
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
+regions[content] = Content
+regions[header] = Header
+regions[help] = Help
+regions[footer] = Footer
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[highlighted] = Highlighted
+
+; Scripts =====================================================================
+scripts[] = bootstrap/js/bootstrap.js
+; Styles =====================================================================
+stylesheets[all][] = bootstrap/css/bootstrap-responsive.css
+stylesheets[all][] = bootstrap/css/bootstrap.min.css
+stylesheets[all][] = css/style.css
